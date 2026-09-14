@@ -4,14 +4,19 @@
     
 </head>
 <body>
-    <h1>Lanchonete</h1>
-    <p>atuar no ramo de entrega de refeição por meio da internet</p>
-    <ul>
-        <li>comidas</li>
-        <li>entrega</li>
-        <li>sobremesas</li>
-    </ul>
-    <table>
+    <header>
+        <h1>Lanchonete</h1>
+        <p>atuar no ramo de entrega de refeição por meio da internet</p>
+    </header>
+    <main>
+            <section>
+                <h2>Cardápio</h2>
+                <ul>
+                    <li>Comidas</li>
+                    <li>Entrega</li>
+                    <li>Sobremesas</li>
+                </ul>
+                <table>
         <tr>
             <th>Produto</th>
             <th>Preço</th>
@@ -25,10 +30,48 @@
             <td>R$ 15,00</td>
         </tr>
     </table>
-    <a href="https://www.ifood.com.br" target="_blank"
+            <img src="assets/images/comida.jpg" alt="Logo Ifood" width="300">
+            </section>
+            <section>
+                <h2>formulario</h2>
+                <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados do cliente e produto</legend>
+
+                    <div>
+                        <label for="nomeCliente">Nome completo: </label>
+                        <input type="text" id="nomeCliente" name="nome" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="cpfCliente">CPF:</label>
+                        <input type="text" id="cpfCliente" name="cpf" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="telefone">WhatsApp (somente números):</label>
+                        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{11}" placeholder="Ex: 83999999999">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="quantidade">Quantidade desejada:</label>
+                        <input type="number" id="quantidade" name="quantidade" min="1" max="50">
+                    </div>
+                    <br>
+                    <button type="submit">Enviar Solicitação</button>
+                </fieldset>
+            </form>
+            </section>
+            
+    </main>
+    <footer>
+        <ahref="https://www.ifood.com.br" target="_blank"
         rel="noopener noreferrer">Ifood</a>
-        <img src="assets/images/ifood-logo.webp" alt="Logo Ifood" width="300">
+    </footer>
+    
+    
         
+
 
 </body>
 </html>
