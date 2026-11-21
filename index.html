@@ -1,77 +1,258 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Peça suas comidas favoritas no Meu Delivery.">
+
+    <title>Meu Delivery | Página Inicial</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+    <!-- CABEÇALHO -->
     <header>
-        <h1>Lanchonete</h1>
-        <p>atuar no ramo de entrega de refeição por meio da internet</p>
+
+        <h1>Meu Delivery</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="pedido.html">Fazer pedido</a></li>
+            </ul>
+        </nav>
+
     </header>
+
+
     <main>
-            <section>
-                <h2>Cardápio</h2>
-                <ul>
-                    <li>Comidas</li>
-                    <li>Entrega</li>
-                    <li>Sobremesas</li>
-                </ul>
-                <table>
-        <tr>
-            <th>Produto</th>
-            <th>Preço</th>
-        </tr>
-        <tr>
-            <td>sobremesas</td>
-            <td>R$ 10,00</td>
-        </tr>
-        <tr>
-            <td>Comidas</td>
-            <td>R$ 15,00</td>
-        </tr>
-    </table>
-            <img src="assets/images/comida.jpg" alt="Logo Ifood" width="300">
-            </section>
-            <section>
-                <h2>formulario</h2>
-                <form action="#" method="post">
-                <fieldset>
-                    <legend>Dados do cliente e produto</legend>
 
-                    <div>
-                        <label for="nomeCliente">Nome completo: </label>
-                        <input type="text" id="nomeCliente" name="nome" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="cpfCliente">CPF:</label>
-                        <input type="text" id="cpfCliente" name="cpf" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="telefone">WhatsApp (somente números):</label>
-                        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{11}" placeholder="Ex: 83999999999">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="quantidade">Quantidade desejada:</label>
-                        <input type="number" id="quantidade" name="quantidade" min="1" max="50">
-                    </div>
-                    <br>
-                    <button type="submit">Enviar Solicitação</button>
-                </fieldset>
-            </form>
-            </section>
-            
+        <!-- APRESENTAÇÃO -->
+        <section id="inicio">
+
+            <h2>Seu pedido favorito está a um clique!</h2>
+
+            <p>
+                Encontre seus pratos favoritos, escolha o que deseja
+                e receba sua refeição no conforto da sua casa.
+            </p>
+
+            <a href="cardapio.html">
+                Conheça nosso cardápio
+            </a>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLGOP3HG74yvxkBBGIiveF2h_LF4AgzbqZQH1k-5zzwQ&s=10"
+                 alt="Refeição preparada para entrega">
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section id="categorias">
+
+            <h2>Explore nossas categorias</h2>
+
+            <p>
+                Encontre opções deliciosas para todos os momentos.
+            </p>
+
+            <ul>
+                <li>
+                    <a href="cardapio.html#lanches">
+                        Lanches
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cardapio.html#comidas">
+                        Comidas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cardapio.html#bebidas">
+                        Bebidas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cardapio.html#sobremesas">
+                        Sobremesas
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- PRODUTOS EM DESTAQUE -->
+        <section id="destaques">
+
+            <h2>Mais pedidos</h2>
+
+            <p>
+                Confira algumas das opções favoritas dos nossos clientes.
+            </p>
+
+            <article>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCd6topRLZBcXYOuVNLEWPbfl4HbT7A0esuXRjCiheQ&s=10"
+                     alt="Hambúrguer artesanal">
+
+                <h3>Hambúrguer artesanal</h3>
+
+                <p>
+                    Pão, carne, queijo e ingredientes frescos.
+                </p>
+
+                <p>R$ 20,00</p>
+
+                <a href="pedido.html">
+                    Fazer pedido
+                </a>
+
+            </article>
+
+
+            <article>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXvhF_5h4gv6QkHhe24OOsi_Pm45Ez4cGxvQ_ZD8IKhg&s=10"
+                     alt="Pizza de mussarela">
+
+                <h3>Pizza de mussarela</h3>
+
+                <p>
+                    Massa especial, molho de tomate e queijo.
+                </p>
+
+                <p>R$ 35,00</p>
+
+                <a href="pedido.html">
+                    Fazer pedido
+                </a>
+
+            </article>
+
+
+            <article>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-IYgnEaEC0UUzxIiMO_TKNbvkwBoqHGHh36DULbB2LQ&s=10"
+                     alt="Sobremesa de chocolate">
+
+                <h3>Brownie de chocolate</h3>
+
+                <p>
+                    Uma sobremesa deliciosa para finalizar sua refeição.
+                </p>
+
+                <p>R$ 10,00</p>
+
+                <a href="pedido.html">
+                    Fazer pedido
+                </a>
+
+            </article>
+
+            <p>
+                <a href="cardapio.html">
+                    Ver cardápio completo
+                </a>
+            </p>
+
+        </section>
+
+
+        <!-- SERVIÇOS -->
+        <section id="servicos">
+
+            <h2>Por que pedir com a gente?</h2>
+
+            <article>
+
+                <h3>Entrega prática</h3>
+
+                <p>
+                    Faça seu pedido online sem precisar sair de casa.
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>Variedade de opções</h3>
+
+                <p>
+                    Temos opções de lanches, refeições e sobremesas.
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>Facilidade para pedir</h3>
+
+                <p>
+                    Escolha seus produtos e preencha seus dados
+                    de entrega de maneira simples.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- CHAMADA PARA AÇÃO -->
+        <section id="fazer-pedido">
+
+            <h2>Está com fome?</h2>
+
+            <p>
+                Escolha seu prato favorito e faça seu pedido!
+            </p>
+
+            <a href="pedido.html">
+                Fazer meu pedido
+            </a>
+
+        </section>
+
     </main>
-    <footer>
-        <ahref="https://www.ifood.com.br" target="_blank"
-        rel="noopener noreferrer">Ifood</a>
-    </footer>
-    
-    
-        
 
+
+    <!-- RODAPÉ -->
+    <footer id="contato">
+
+        <h2>Meu Delivery</h2>
+
+        <p>
+            Comida boa, praticidade e sabor na sua casa.
+        </p>
+
+        <nav>
+            <ul>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+            </ul>
+        </nav>
+
+        <p>
+            &copy; 2026 Meu Delivery.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
+

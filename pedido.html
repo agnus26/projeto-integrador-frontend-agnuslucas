@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faça seu pedido no Meu Delivery.">
+    <title>Fazer Pedido | Meu Delivery</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Delivery</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="pedido.html">Fazer Pedido</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+
+        <section id="introducao-pedido">
+            <h2>Faça seu pedido</h2>
+
+            <p>
+                Preencha o formulário abaixo para escolher seus produtos
+                e solicitar sua entrega.
+            </p>
+        </section>
+        <section id="formulario-pedido">
+
+            <h2>Informações do cliente</h2>
+
+            <form action="confirmacao.html" method="get">
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">WhatsApp:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="endereco">Endereço de entrega:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="numero">Número da residência:</label>
+                <input type="text" id="numero" name="numero" required>
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento">
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required>
+
+                <h2>Escolha seus produtos</h2>
+
+                <label for="produto1">Hambúrguer - R$ 20,00</label>
+                <input type="number" id="produto1" name="hamburguer"
+                    min="0" value="0">
+
+                <label for="produto2">Hot Dog - R$ 12,00</label>
+                <input type="number" id="produto2" name="hotdog"
+                    min="0" value="0">
+
+                <label for="produto3">Prato Feito - R$ 25,00</label>
+                <input type="number" id="produto3" name="prato_feito"
+                    min="0" value="0">
+
+                <label for="produto4">Lasanha - R$ 28,00</label>
+                <input type="number" id="produto4" name="lasanha"
+                    min="0" value="0">
+
+                <label for="produto5">Refrigerante - R$ 6,00</label>
+                <input type="number" id="produto5" name="refrigerante"
+                    min="0" value="0">
+
+                <label for="produto6">Suco - R$ 8,00</label>
+                <input type="number" id="produto6" name="suco"
+                    min="0" value="0">
+
+                <h2>Forma de pagamento</h2>
+
+                <label for="pagamento">Escolha uma opção:</label>
+
+                <select id="pagamento" name="pagamento" required>
+                    <option value="">Selecione</option>
+                    <option value="pix">PIX</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="cartao_credito">Cartão de crédito</option>
+                    <option value="cartao_debito">Cartão de débito</option>
+                </select>
+                <h2>Observações</h2>
+
+                <label for="observacoes">
+                    Deseja adicionar alguma observação?
+                </label>
+
+                <textarea id="observacoes" name="observacoes"
+                        rows="5"
+                        placeholder="Exemplo: retirar cebola, enviar talheres..."></textarea>
+
+                <button type="submit">Enviar pedido</button>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Meu Delivery - Todos os direitos reservados.</p>
+
+        <p>Faça seu pedido e receba no conforto da sua casa!</p>
+
+        <a href="index.html">Voltar para o início</a>
+    </footer>
+</body>
+</html>
