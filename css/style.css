@@ -11,7 +11,6 @@ body {
     color: #333;
 }
 
-
 /* CABEÇALHO */
 header {
     background-color: #292d42;
@@ -30,23 +29,27 @@ header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-header nav li {
-    display: inline-block;
-    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 header nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.2s;
 }
 
 header nav a:hover {
     color: orange;
 }
 
+header nav a:focus-visible {
+    outline: 2px solid orange;
+}
 
 /* Conteúdo */
 main {
@@ -68,13 +71,29 @@ img {
 }
 
 /* Produtos */
+section:has(> article) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+section:has(> article) > h2 {
+    grid-column: 1 / -1;
+}
+
 article {
-    display: inline-block;
-    width: 30%;
     padding: 10px;
-    margin: 10px;
     background-color: #fff0e3;
     border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+article:nth-child(even) {
+    background-color: #ffead6;
+}
+
+article:hover {
+    transform: translateY(-3px);
 }
 
 /* Formulários */
@@ -86,6 +105,12 @@ select {
     margin: 5px 0;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid orange;
+}
+
 /* Botões */
 button,
 input[type="submit"] {
@@ -95,9 +120,11 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
-button:hover {
+button:hover,
+input[type="submit"]:hover {
     background-color: #c94b00;
 }
 
@@ -111,8 +138,12 @@ footer {
 
 /* Celulares */
 @media (max-width: 600px) {
-    article {
-        width: 100%;
-        margin: 10px 0;
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section:has(> article) {
+        grid-template-columns: 1fr;
     }
 }
