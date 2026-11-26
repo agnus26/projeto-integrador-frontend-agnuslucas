@@ -1,0 +1,118 @@
+
+/* Configuração geral */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f2;
+    color: #333;
+}
+
+
+/* CABEÇALHO */
+header {
+    background-color: #292d42;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* MENU */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: orange;
+}
+
+
+/* Conteúdo */
+main {
+    width: 90%;
+    margin: 20px auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Produtos */
+article {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff0e3;
+    border-radius: 10px;
+}
+
+/* Formulários */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Botões */
+button,
+input[type="submit"] {
+    background-color: #e85d04;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c94b00;
+}
+
+/* Rodapé */
+footer {
+    background-color: #292d42;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    article {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
