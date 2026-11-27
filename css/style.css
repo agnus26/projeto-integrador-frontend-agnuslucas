@@ -285,4 +285,37 @@ header.navbar {
     }
 
 }
+/* Estilos aplicados via JavaScript (Aula 11) */
+.info-dom-extra {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--cor-primaria, #2c3e50);
+}
 
+.faixa-destaque {
+    border-left: 4px solid #27ae60;
+}
+
+.faixa-recomendado {
+    border-left: 4px solid #2980b9;
+}
+
+.faixa-tradicional {
+    border-left: 4px solid #7f8c8d;
+}
+
+.resumo-cardapio {
+    background: #f8f9fa;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.resumo-cardapio h3 {
+    margin-bottom: 0.5rem;
+    color: #2f3640;
+}
