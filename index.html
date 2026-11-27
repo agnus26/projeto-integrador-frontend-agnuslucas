@@ -17,21 +17,60 @@
 <body>
 
     <!-- CABEÇALHO -->
-    <header>
+    
+<!-- CABEÇALHO E MENU DE NAVEGAÇÃO -->
+<header class="navbar">
 
-        <h1>Meu Delivery</h1>
+    <a href="index.html" class="logo">Meu Delivery</a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="sobre.html">Sobre nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="pedido.html">Fazer pedido</a></li>
-            </ul>
-        </nav>
+    <nav aria-label="Menu principal">
 
-    </header>
+        <ul class="menu">
+
+            <li>
+                <a href="index.html" class="ativo">Início</a>
+            </li>
+
+            <li class="tem-dropdown">
+                <a href="cardapio.html">Cardápio ▾</a>
+
+                <ul class="dropdown">
+                    <li><a href="cardapio.html#lanches">Lanches</a></li>
+                    <li><a href="cardapio.html#comidas">Comidas</a></li>
+                    <li><a href="cardapio.html#bebidas">Bebidas</a></li>
+                    <li><a href="cardapio.html#sobremesas">Sobremesas</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="sobre.html">Sobre nós</a>
+            </li>
+
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+
+            <li>
+                <a href="pedido.html">Fazer pedido</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- MENU HAMBÚRGUER -->
+    <button class="menu-hamburguer"
+        aria-label="Abrir menu"
+        aria-expanded="false">
+
+        <span class="barra"></span>
+        <span class="barra"></span>
+        <span class="barra"></span>
+
+    </button>
+
+</header>
+
 
 
     <main>
