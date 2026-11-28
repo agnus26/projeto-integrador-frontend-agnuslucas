@@ -24,4 +24,4 @@ O site conta com um tema escuro (*dark mode*) elegante e focado em alta legibili
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/agnus26/projeto-integrador-frontend-agnuslucas.git](https://github.com/agnus26/projeto-integrador-frontend-agnuslucas.git)
+   git clone https://github.com/agnus26/projeto-integrador-frontend-agnuslucas.git
