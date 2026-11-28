@@ -356,3 +356,135 @@ header.navbar {
     padding: 0;
     font-size: 0.95rem;
 }
+:root {
+    --cor-primaria: #007bff;     /* Azul moderno para botões e destaques */
+    --cor-secundaria: #ffc107;   /* Amarelo vibrante para detalhes */
+    --cor-fundo: #121212;        /* Preto de fundo (modo escuro elegante) */
+    --cor-texto: #f8f9fa;        /* Texto claro para contrastar com o fundo */
+    --cor-card: #1e1e1e;         /* Preto/cinzento escuro para os cards */
+}
+/* Ajustes específicos para a paleta Amarela, Preta e Azul */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+header, main, .resumo-catalogo {
+    background-color: var(--cor-card);
+    color: var(--cor-texto);
+    border-color: #333;
+}
+
+nav ul li a {
+    color: var(--cor-texto);
+}
+
+nav ul li a:hover {
+    color: var(--cor-secundaria); /* Fica amarelo ao passar o rato */
+}
+
+.botao, button[type="submit"], #btn-adicionar-filme {
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
+
+/* Destaques em Amarelo */
+h1, h2, h3, .contador {
+    color: var(--cor-secundaria);
+}
+/* Corrige o fundo branco dos cartões e garante leitura */
+section, .card, .card-filme, .card-prato, article {
+    background-color: #1e1e1e !important;
+    color: #f8f9fa !important;
+    border: 1px solid #333;
+}
+
+section p, .card p, article p, li {
+    color: #e0e0e0 !important;
+}
+/* --- Estilo Moderno para Links e Listas de Categorias --- */
+
+/* Transforma a lista de categorias em botões modernos (cards) lado a lado */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Cada categoria vira um botão/cartão moderno com fundo escuro elegante e margem */
+ul li a {
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: #ffffff !important; /* Garante que o texto fica branco e legível */
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px; /* Bordas arredondadas estilo pílula */
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o rato (fica com a cor amarela/azul do site) */
+ul li a:hover {
+    background-color: var(--cor-secundaria, #ffc107);
+    color: #121212 !important;
+    border-color: var(--cor-secundaria, #ffc107);
+    transform: translateY(-2px); /* Efeito subtil de elevação */
+}
+
+/* Links comuns no corpo do texto (como "Conheça nosso cardápio") bem visíveis */
+main a:not(nav a) {
+    color: var(--cor-secundaria, #ffc107);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+main a:not(nav a):hover {
+    color: #ffffff;
+}
+/* Estilo moderno e em destaque para o vídeo de apresentação */
+video, .video-container, iframe {
+    width: 100%;
+    max-width: 900px; /* Deixa o vídeo bem largo e visível */
+    height: auto;
+    display: block;
+    margin: 2rem auto; /* Centraliza o vídeo na tela com espaçamento */
+    border-radius: 12px; /* Cantos arredondados modernos */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); /* Sombra elegante para destacar */
+    border: 2px solid #333; /* Moldura discreta combinando com o tema escuro */
+}
+#apresentacao .bloco-midia {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+#apresentacao img, 
+#apresentacao video {
+    width: 100%;
+    max-width: 800px; /* Deixa ambos bem largos e visíveis */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+/* Redimensiona a imagem para um tamanho moderno e proporcional */
+#apresentacao img {
+    width: 100%;
+    max-width: 500px; /* Reduz o tamanho máximo para ficar equilibrado */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    display: block;
+    margin: 1.5rem auto;
+}
